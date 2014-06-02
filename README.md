@@ -18,6 +18,14 @@ It redirects:
 
 ![github.com](/readme/github.com.png)
 
+##Code Snapshot
+Url Routing Function:
+
+![url-router](/readme/url-router.png)
+
+Korma Function:
+
+![db](/readme/db.png)
 ## License
 
 Copyright © 2014 FIXME
