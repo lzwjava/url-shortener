@@ -10,7 +10,7 @@ Then your can see the result when you list the urls.
 
 ![list](/readme/list.png)
 
-Then use the shortened url to visit the github website;
+Then use the shortened url to visit the myblog website;
 
 ![github](/readme/github.png)
 

@@ -9,7 +9,7 @@
 
 (defn addHttp
   [url]
-  (if (.startsWith url "http://")
+  (if (.startsWith url "http")
     url
     (str "http://" url)))
 
@@ -41,6 +41,9 @@
      (or (shorten! url id)
          (recur url)))))
 
+(retain "https://github.com/lzwjava/url-shortener/blob/master/README.md"
+        "readme2")
+
 (defn listUrl []
   (flatten (interpose "<br>" (map (fn [m]
                                     (let [{:keys [id url]} m]
@@ -52,8 +55,7 @@
   (GET "/" request "it's ")
   (GET "/list" [] (listUrl))
   (GET "/assign/:id" [id url]
-       (let [url (addHttp url)]
-         (retain url id)))
+       (retain url id))
   (GET "/:id" [id] (redirect id))
   (POST "/" [url]
         (if (empty? url)
@@ -65,13 +67,16 @@
 
 (use '[ring.adapter.jetty :only (run-jetty)])
 ;(.stop server)
-;(.stop @server)
+(try
+  (.stop @server)
+  (catch Exception e))
+
 (def server (ref 'a))
 (defn run-server []
   ;(use 'ring.adapter.jetty)
   (dosync (ref-set server (run-jetty #'app
                                      {:host "127.0.0.1"
-                                      :port 8084 :join? false}))))
+                                      :port 8085 :join? false}))))
 
 (defn init-counter []
   (swap! counter (fn [_] (db/count-db))))
@@ -80,5 +85,5 @@
   (init-counter)
   (run-server))
 
-;(-main)
+(-main)
 ;(empty? nil)
