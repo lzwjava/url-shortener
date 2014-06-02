@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Leiningen: c3p0:0.9.1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2-sources.jar!/" />
+      <root url="file://$USER_HOME$/android/jad" />
+    </SOURCES>
+  </library>
+</component>

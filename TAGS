@@ -1,0 +1,15 @@
+
+src/shortener/core.clj,168
+(ns shortener.coreshortener.core1,0
+(defroutes appapp6,163
+(def appapp9,209
+(def serverserver13,310
+(defn run-serverrun-server15,386
+(defn -main-main19,447
+
+test/shortener/core_test.clj,67
+(ns shortener.coreshortener.core1,0
+(deftest a-testa-test5,107
+
+project.clj,36
+(defproject shortenershortener1,0
