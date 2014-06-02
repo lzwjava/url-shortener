@@ -1,10 +1,22 @@
 # shortener
-
-A Clojure library designed to ... well, that part is up to you.
+Url Shortener, use compojure,korma library.
 
 ## Usage
+Firstly,use get method to shorten a url with an id.
 
-FIXME
+![assign](/readme/assign.png)
+
+Then your can see the result when you list the urls.
+
+![list](/readme/list.png)
+
+Then use the shortened url to visit the github website;
+
+![github](/readme/github.png)
+
+It redirects:
+
+![github.com](/readme/github.com.png)
 
 ## License
 
